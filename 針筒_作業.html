@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>針筒</title>
+    <style>
+        .big {
+
+            position: relative;
+            background-size: 2px 2px 2px 2px;
+            margin: -15px auto;
+            width: 350px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: black;
+            position: relative;
+            z-index: 3;
+        }
+
+
+        .big::before {
+            content: '';
+            background-image: linear-gradient(to bottom, #ffffff 0%, #aaaaaa 50%, #fff 100%);
+            width: 155px;
+            height: 100px;
+            position: absolute;
+            z-index: 4;
+        }
+
+        .big::after {
+            content: '';
+            background-image: linear-gradient(to left, #910707, #ff0000);
+            width: 155px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            z-index: 4;
+        }
+
+        .bg {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 0;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bg2 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 50px;
+            background-color: black;
+            z-index: 5;
+
+        }
+
+        .bg3 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 100px;
+            background-color: black;
+            z-index: 5;
+
+        }
+
+        .bg4 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 150px;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bg5 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 200px;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bg6 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 250px;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bg7 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 300px;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bg8 {
+            position: absolute;
+            width: 5px;
+            height: 20px;
+            top: 0px;
+            left: 345px;
+            background-color: black;
+            z-index: 5;
+        }
+
+        .bigbig {
+
+            z-index: 2;
+            width: 500px;
+            height: 70px;
+            background-image: linear-gradient(to bottom, #ffffff 0%, #aaaaaa 50%, #fff 100%);
+
+            border: 1px black solid;
+            margin: 200px auto;
+
+            position: relative;
+        }
+
+
+        .bigbig::before {
+            content: '';
+            height: 80px;
+            width: 50px;
+            background-image: linear-gradient(to bottom, #ffffff 0%, #aaaaaa 50%, #fff 100%);
+
+            border: 1px black solid;
+            position: absolute;
+            top: -7px;
+            left: -15px;
+        }
+
+        .bigbig::after {
+            content: '';
+            position: absolute;
+            top: 35px;
+            right: -100px;
+            background-color: rgb(0, 0, 0);
+            height: 1px;
+            width: 100px;
+            z-index: 5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbig">
+        <div class="big">
+            <div class="bg"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4"></div>
+            <div class="bg5"></div>
+            <div class="bg6"></div>
+            <div class="bg7"></div>
+            <div class="bg8"></div>
+        </div>
+    </div>
+</body>
+
+</html>
